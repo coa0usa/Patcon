@@ -11,7 +11,7 @@
  * Os dados de produção NÃO passam por aqui: ficam no IndexedDB do navegador,
  * que já funciona offline.
  */
-const VERSAO = 'patcon-v2';
+const VERSAO = 'patcon-v5';
 const CACHE_APP = `${VERSAO}-app`;
 const CACHE_EXTERNO = `${VERSAO}-externo`;
 const PAGINA_PRINCIPAL = './index.html';

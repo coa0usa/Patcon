@@ -262,6 +262,55 @@
     }
     .lembrete-alert ul { margin: 4px 0 0 18px; padding: 0; color: var(--ink-2); }
     .lembretes-panel { padding: 16px; margin-bottom: 16px; }
+    .lembrete-alert ul { list-style: disc; }
+    .nota-extra { font-size: 11px; font-weight: 600; color: var(--ink-3); white-space: nowrap; }
+    .lem-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+    .lem-close { color: var(--ink-3); }
+    .lem-close:hover { background: var(--surface-3); }
+    .composer { border: 1px solid var(--border-strong); border-radius: var(--radius); background: var(--surface); transition: border-color .15s, box-shadow .15s; }
+    .composer:focus-within { border-color: var(--brand-gold); box-shadow: var(--focus-ring); }
+    .composer textarea { border: 0; box-shadow: none !important; resize: vertical; min-height: 76px; background: transparent; border-radius: var(--radius) var(--radius) 0 0; font-size: 14px; }
+    .composer-bar { display: flex; align-items: center; gap: 8px; padding: 8px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+    .composer-bar label.btn { cursor: pointer; }
+    .composer-hint { flex: 1; font-size: 12px; color: var(--ink-3); min-width: 140px; }
+    .anexos { display: flex; gap: 8px; flex-wrap: wrap; padding: 0 12px 10px; align-items: center; }
+    .thumb { position: relative; width: 76px; height: 76px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); flex: none; background: var(--surface-3); }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+    .thumb-x { position: absolute; top: 4px; right: 4px; width: 22px; height: 22px; border-radius: 50%; border: 0; background: rgba(15,23,42,.78); color: #fff; font-size: 15px; line-height: 1; display: grid; place-items: center; padding: 0; }
+    .thumb-x.static { position: static; background: var(--surface-3); color: var(--ink-2); }
+    .audio-chip { display: flex; align-items: center; gap: 8px; padding: 6px 8px 6px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); font-size: 12px; font-weight: 700; color: var(--ink-2); max-width: 100%; }
+    .audio-chip audio { height: 34px; max-width: 220px; }
+    .btn-rec.gravando { background: var(--bad); color: #fff; border-color: var(--bad); }
+    .btn-rec.gravando svg { animation: pulse 1s infinite; }
+    .rec-status { display: flex; align-items: center; gap: 10px; padding: 0 12px 10px; font-size: 12px; font-weight: 600; color: var(--bad-ink); }
+    .rec-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--bad); animation: pulse 1s infinite; flex: none; }
+    .nota { display: flex; gap: 12px; align-items: flex-start; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface-2); }
+    .nota-hora { flex: none; min-width: 42px; padding-top: 2px; font-size: 12px; font-weight: 700; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+    .nota-corpo { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+    .nota-texto { white-space: pre-wrap; word-break: break-word; font-size: 14px; color: var(--ink); }
+    .nota-fotos { display: flex; gap: 6px; flex-wrap: wrap; }
+    .nota audio { width: 100%; max-width: 340px; height: 36px; }
+    .nota-del { width: 32px; height: 32px; color: var(--ink-muted); }
+    .nota-del:hover { background: var(--bad-soft); color: var(--bad-ink); }
+    .day-notes-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--ink-3); margin: 6px 0 8px; }
+
+    /* Aba Anotações */
+    .notas-filtros { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .day-card { padding: 18px 20px; }
+    .day-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+    .day-head h3 { margin: 0; font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .day-weekday { font-size: 12px; font-weight: 600; color: var(--gold-strong); }
+    .day-weekday::first-letter { text-transform: uppercase; }
+    .day-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; margin-bottom: 12px; }
+    .stat { padding: 10px 12px; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--border); }
+    .stat-l { font-size: 11px; font-weight: 600; color: var(--ink-3); }
+    .stat-v { font-size: 17px; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+    .stat-v small { font-size: 12px; color: var(--ink-3); font-weight: 600; }
+    .day-line { font-size: 13px; color: var(--ink-2); margin-bottom: 6px; }
+    .day-line b { color: var(--ink); }
+
+    .lightbox { cursor: zoom-out; background: rgba(5, 8, 15, 0.88); }
+    .lightbox img { max-width: 94vw; max-height: 88vh; border-radius: 12px; box-shadow: var(--shadow-lg); }
     .lem-row { display: flex; gap: 10px; align-items: stretch; flex-wrap: wrap; }
     .lem-row textarea { flex: 1 1 320px; min-height: 64px; resize: vertical; }
     .lem-list { margin-top: 12px; display: flex; flex-direction: column; gap: 8px; }
@@ -426,6 +475,15 @@
     .list-item:hover { background: var(--surface-2); }
     .list-item button { border: 0; background: transparent; color: var(--bad-ink); font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 6px; }
     .list-item button:hover { background: var(--bad-soft); }
+    .list-head { display: flex; justify-content: space-between; padding: 7px 12px; font-size: 11px; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .5px; background: var(--surface-2); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1; }
+    .svc-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ref-field { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--ink-3); font-weight: 600; }
+    .ref-input { width: 70px; padding: 5px 8px; border: 1px solid var(--border-strong); border-radius: 8px; background: var(--surface); color: var(--ink); font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; outline: none; }
+    .ref-input:focus { border-color: var(--brand-gold); box-shadow: var(--focus-ring); }
+    .ref-input.salvo { border-color: var(--good); }
+    #rowCadServico { flex-wrap: wrap; }
+    #rowCadServico #cadDesc { flex: 1 1 calc(100% - 84px); }
+    #rowCadServico #cadRef { flex: 1 1 100px !important; min-width: 0; }
     .meta-box { margin-top: 12px; padding: 12px; background: var(--surface-2); border-radius: var(--radius-sm); font-size: 12px; color: var(--ink-3); }
     .meta-box b { color: var(--ink); font-size: 16px; }
 
@@ -533,7 +591,7 @@
     @media print {
       @page { size: A4 landscape; margin: 10mm; }
       body { background: #fff; color: #000; }
-      .topbar, .no-print, #secao-charts, #secao-config, .custom-modal-backdrop, #toast-container { display: none !important; }
+      .topbar, .no-print, #secao-charts, #secao-config, #secao-notas, .custom-modal-backdrop, #toast-container { display: none !important; }
       .app { padding: 0; max-width: none; }
       .print-only { display: block; }
       .card { border: 0; box-shadow: none; }
@@ -546,6 +604,14 @@
       #resumo-pdf { margin-top: 16px; page-break-inside: avoid; }
       #resumo-pdf table { width: 60%; margin: 0 auto; }
       #resumo-pdf th, #resumo-pdf td { border: 1px solid #999; padding: 4px 8px; position: static; }
+    }
+    @media (max-width: 560px) {
+      .app-tab { padding: 8px 6px; font-size: 12px; gap: 4px; }
+      .app-tab svg { display: none; }
+      .composer-hint { order: 5; flex-basis: 100%; }
+      #btnSalvarLembrete { margin-left: auto; }
+      .notas-filtros { width: 100%; }
+      .notas-filtros .search-group { max-width: none !important; flex: 1 1 100%; }
     }
     @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
   </style>
@@ -570,6 +636,10 @@
       <button class="app-tab" id="tab-charts" role="tab" aria-selected="false" aria-controls="secao-charts" onclick="irPara('charts')">
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
         Dashboard
+      </button>
+      <button class="app-tab" id="tab-notas" role="tab" aria-selected="false" aria-controls="secao-notas" onclick="irPara('notas')">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.59a1 1 0 01.7.29l5.42 5.42a1 1 0 01.29.7V19a2 2 0 01-2 2z"/></svg>
+        Anotações
       </button>
       <button class="app-tab" id="tab-config" role="tab" aria-selected="false" aria-controls="secao-config" onclick="irPara('config')">
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
@@ -666,10 +736,35 @@
 
     <!-- LEMBRETES: painel de edição -->
     <div id="painel-lembretes" class="card lembretes-panel hidden no-print">
-      <div class="lem-row">
-        <input type="date" id="lemData" class="field field-date" aria-label="Data do lembrete">
-        <textarea id="lemTexto" class="field" placeholder="Escreva o lembrete deste dia (ex.: 'Ana não irá trabalhar', 'Francisca precisará sair mais cedo')"></textarea>
-        <button class="btn btn-primary" onclick="adicionarLembrete()">Adicionar</button>
+      <div class="lem-head">
+        <h3 class="card-title">🗒️ Lembretes e anotações</h3>
+        <div class="toolbar">
+          <input type="date" id="lemData" class="field field-date" aria-label="Data da anotação" onchange="renderLembretesListaDia(this.value)">
+          <button class="icon-btn lem-close" onclick="togglePainelLembretes()" aria-label="Fechar lembretes" title="Fechar">
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="composer">
+        <textarea id="lemTexto" class="field" rows="3" placeholder="Escreva, grave um áudio ou anexe fotos (ex.: 'Ana não irá trabalhar', 'Máquina 3 com defeito')"></textarea>
+        <div id="gravacaoStatus" class="rec-status hidden" aria-live="polite">
+          <span class="rec-dot"></span><b id="gravacaoTempo">00:00</b><span id="gravacaoMsg">Gravando…</span>
+        </div>
+        <div id="lemAnexos" class="anexos hidden"></div>
+        <div class="composer-bar">
+          <label class="btn btn-ghost" title="Tirar foto ou escolher da galeria">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.66-.9l.82-1.2A2 2 0 0110.07 4h3.86a2 2 0 011.66.9l.82 1.2a2 2 0 001.66.9H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Foto
+            <input type="file" id="lemFoto" accept="image/*" multiple hidden onchange="adicionarFotos(this.files); this.value = ''">
+          </label>
+          <button class="btn btn-ghost btn-rec" id="btnGravar" onclick="alternarGravacao()" title="Gravar áudio e transcrever em texto">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-14 0m7 7v3m0 0H9m3 0h3M12 15a3 3 0 01-3-3V5a3 3 0 116 0v7a3 3 0 01-3 3z"/></svg>
+            <span id="btnGravarTxt">Gravar áudio</span>
+          </button>
+          <span class="composer-hint" id="lemDica"></span>
+          <button class="btn btn-primary" id="btnSalvarLembrete" onclick="adicionarLembrete()">Salvar</button>
+        </div>
       </div>
       <div id="lemListaDia" class="lem-list"></div>
     </div>
@@ -812,6 +907,25 @@
     </div>
   </section>
 
+  <!-- ===================== ANOTAÇÕES ===================== -->
+  <section id="secao-notas" class="hidden">
+    <div class="page-head">
+      <div>
+        <h2 class="page-title">Anotações</h2>
+        <p class="page-sub" id="notasContagem">Resumo de cada dia: produção e anotações</p>
+      </div>
+      <div class="notas-filtros">
+        <input type="month" id="notasMes" class="field field-date" aria-label="Mês" onchange="renderAnotacoes()">
+        <div class="search-group" style="max-width:260px; background:var(--surface);">
+          <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="search" id="notasBusca" class="search-input" placeholder="Buscar nas anotações..." oninput="buscarAnotacoes()">
+        </div>
+        <label class="switch"><input type="checkbox" id="notasSoComNotas" onchange="renderAnotacoes()"> Só dias com anotações</label>
+      </div>
+    </div>
+    <div id="notas-lista" class="stack"></div>
+  </section>
+
   <!-- ===================== CONFIGURAÇÕES ===================== -->
   <section id="secao-config" class="hidden">
     <div class="page-head">
@@ -833,10 +947,11 @@
 
       <div class="card config-box">
         <h3>👕 Serviços</h3>
-        <p class="desc">Sigla usada no lançamento e sua descrição.</p>
-        <div class="input-row">
-          <input type="text" id="cadSigla" class="field" placeholder="Sigla" style="flex: 0 0 90px;">
+        <p class="desc">Sigla, descrição e quantidade de referência de peças por hora. A referência não bloqueia o lançamento: serve para o "% da capacidade" e para as cores da tabela.</p>
+        <div class="input-row" id="rowCadServico">
+          <input type="text" id="cadSigla" class="field" placeholder="Sigla" style="flex: 0 0 76px;">
           <input type="text" id="cadDesc" class="field" placeholder="Descrição (ex: BIROLA)" onkeydown="if(event.key==='Enter') addCadServico()">
+          <input type="number" id="cadRef" class="field" placeholder="Peças/h" min="1" step="1" inputmode="numeric" style="flex: 0 0 96px;" onkeydown="if(event.key==='Enter') addCadServico()">
           <button class="btn btn-primary" onclick="addCadServico()">Adicionar</button>
         </div>
         <div id="listaServicos" class="list-items"></div>
@@ -916,6 +1031,11 @@
 
 <div id="toast-container" aria-live="polite"></div>
 
+<!-- Foto ampliada -->
+<div id="lightbox" class="custom-modal-backdrop lightbox" onclick="fecharFoto()" role="dialog" aria-label="Foto ampliada">
+  <img id="lightbox-img" alt="Foto da anotação">
+</div>
+
 <div id="update-bar" class="update-bar" role="status">
   <span>Nova versão do app disponível.</span>
   <button class="btn btn-primary btn-sm" onclick="ativarNovaVersao()">Atualizar</button>
@@ -948,8 +1068,12 @@
   const META_DIARIA_PADRAO = 900; // peças/dia
   let META_DIARIA = META_DIARIA_PADRAO;
 
-  // Limites de produção por serviço por hora (validação)
-  const LIMITES_POR_SERVICO = {
+  // Referência de peças por hora de cada serviço (NÃO bloqueia o lançamento;
+  // usada no "% da capacidade" do painel e nas cores verde/amarelo/vermelho da tabela).
+  // Os valores reais vêm do cadastro em Configurações → Serviços (campo "r").
+  // Esta tabela é só o valor inicial para serviços que ainda não têm referência cadastrada.
+  let LIMITES_POR_SERVICO = {};
+  const REFERENCIA_PADRAO = {
     'B': 50,    // BIROLA max 50/hora
     'L': 40,    // LATERAL max 40/hora
     'LP': 100,  // LIMPEZA max 100/hora
@@ -1132,9 +1256,15 @@
     {s: "GL", d: "GOLA"}, {s: "CS", d: "CASAMENTO"}, {s: "O", d: "OMBRO"}, {s: "F", d: "FINALIZAÇÃO"}
   ];
 
-  const req = indexedDB.open("PatCom_Detail_v10", 2);
+  // v3: novo store "anotacoes" (lembretes com texto, fotos e áudio)
+  const req = indexedDB.open("PatCom_Detail_v10", 3);
+  req.onblocked = () => mostrarToast('Feche as outras abas do PATCON para concluir a atualização.', 'aviso');
   req.onupgradeneeded = e => {
     let d = e.target.result;
+    if (!d.objectStoreNames.contains("anotacoes")) {
+      const st = d.createObjectStore("anotacoes", { keyPath: "id", autoIncrement: true });
+      st.createIndex("data", "data", { unique: false });
+    }
     if (!d.objectStoreNames.contains("producao")) {
       d.createObjectStore("producao", { keyPath: "data" });
     }
@@ -1145,11 +1275,33 @@
       d.createObjectStore("auditoria", { keyPath: "id", autoIncrement: true });
     }
   };
-  req.onsuccess = e => { db = e.target.result; verificarEImportar(); };
+  req.onsuccess = e => {
+    db = e.target.result;
+    // Se outra aba abrir uma versão mais nova do banco, libera esta conexão
+    db.onversionchange = () => { db.close(); mostrarToast('O app foi atualizado em outra aba. Recarregue esta página.', 'aviso'); };
+    verificarEImportar();
+  };
+
+  // Monta o mapa sigla → peças/hora a partir do cadastro de serviços
+  function aplicarReferencias(lista) {
+    LIMITES_POR_SERVICO = {};
+    (lista || []).forEach(item => {
+      const r = parseInt(item.r, 10);
+      if (r > 0) LIMITES_POR_SERVICO[item.s] = r;
+    });
+  }
 
   async function verificarEImportar() {
     let doc = await getDoc('servicos');
-    if (!doc) await saveDoc({ tipo: 'servicos', lista: servicosIniciais });
+    if (!doc) {
+      doc = { tipo: 'servicos', lista: servicosIniciais.map(x => ({ ...x, r: REFERENCIA_PADRAO[x.s] || null })) };
+      await saveDoc(doc);
+    } else if (doc.lista.some(x => x.r === undefined)) {
+      // Migração: serviços cadastrados antes do campo "peças/hora" recebem o valor padrão
+      doc.lista = doc.lista.map(x => x.r === undefined ? { ...x, r: REFERENCIA_PADRAO[x.s] || null } : x);
+      await saveDoc(doc);
+    }
+    aplicarReferencias(doc.lista);
     
     // Carregar META_DIARIA das configurações
     let configMeta = await getDoc('config_meta');
@@ -1159,9 +1311,28 @@
       await saveDoc({ tipo: 'config_meta', valor: META_DIARIA_PADRAO });
     }
     
+    await migrarLembretesAntigos();
+    // Pede ao navegador para não apagar os dados (fotos/áudios) quando o celular ficar sem espaço
+    try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
+
     carregarConfigs();
     inicializarTabela();
     setTimeout(() => { exibirLembretesDoDia(); atualizarBadgeLembretes(); }, 100);
+  }
+
+  // Lembretes antigos (só texto, guardados em config/'lembretes') → store "anotacoes"
+  async function migrarLembretesAntigos() {
+    const antigo = await getDoc('lembretes');
+    if (!antigo || !antigo.mapa) return;
+    await new Promise((ok, erro) => {
+      const tx = db.transaction(['anotacoes', 'config'], 'readwrite');
+      const st = tx.objectStore('anotacoes');
+      Object.entries(antigo.mapa).forEach(([data, arr]) => (arr || []).forEach((texto, i) => {
+        st.add({ data, criadoEm: `${data}T00:00:${String(i).padStart(2, '0')}`, semHora: true, texto: String(texto), fotos: [], audio: null });
+      }));
+      tx.objectStore('config').delete('lembretes');
+      tx.oncomplete = ok; tx.onerror = () => erro(tx.error);
+    });
   }
 
   function inicializarTabela() {
@@ -1615,10 +1786,11 @@
       let uso = 0;
       [[s1[h].value, q1[h].value], [s2[h].value, q2[h].value]].forEach(([s, q]) => {
         const lim = LIMITES_POR_SERVICO[s]; const n = parseFloat(q) || 0;
-        if (s && lim) { partes.push(`${s}: máx. ${lim}/h`); uso += n / lim; }
+        if (s && lim) { partes.push(`${s}: ref. ${lim}/h`); uso += n / lim; }
       });
       const pct = Math.round(uso * 100);
-      el.textContent = partes.length ? `${partes.join(' · ')}${pct > 0 ? ` — ${pct}% da capacidade` : ''}` : '';
+      const extra = pct > 100 ? ` — ${pct}% (acima da referência)` : (pct > 0 ? ` — ${pct}% da capacidade` : '');
+      el.textContent = partes.length ? `${partes.join(' · ')}${extra}` : '';
       el.classList.toggle('over', pct > 100);
       el.closest('.hour-card').classList.toggle('has-data', (parseFloat(q1[h].value) || 0) > 0 || (parseFloat(q2[h].value) || 0) > 0);
     }
@@ -1644,21 +1816,8 @@
       const s2 = siglas2[h].value;
       let q2 = parseFloat(quants2[h].value) || 0;
 
-      // Validar limites por serviço
-      if (s1 && LIMITES_POR_SERVICO[s1]) {
-        if (q1 > LIMITES_POR_SERVICO[s1]) {
-          mostrarToast(`⚠️ ${s1}: máximo ${LIMITES_POR_SERVICO[s1]} peças/hora. Reduzindo para o limite.`, 'aviso');
-          q1 = LIMITES_POR_SERVICO[s1];
-          quants1[h].value = q1;
-        }
-      }
-      if (s2 && LIMITES_POR_SERVICO[s2]) {
-        if (q2 > LIMITES_POR_SERVICO[s2]) {
-          mostrarToast(`⚠️ ${s2}: máximo ${LIMITES_POR_SERVICO[s2]} peças/hora. Reduzindo para o limite.`, 'aviso');
-          q2 = LIMITES_POR_SERVICO[s2];
-          quants2[h].value = q2;
-        }
-      }
+      // Sem trava: o valor digitado é aceito como está.
+      // LIMITES_POR_SERVICO serve só de referência (dica "% da capacidade" e cores da tabela).
 
       if (s1 && q1 > 0) arr.push({ s: s1, q: q1 });
       if (s2 && q2 > 0) arr.push({ s: s2, q: q2 });
@@ -1829,102 +1988,480 @@
     );
   }
 
-  // ====== LEMBRETES: armazenamento e UI ======
-  async function getLembretesDoc() {
-    return await getDoc('lembretes') || { tipo: 'lembretes', mapa: {} };
+  // ====== LEMBRETES / ANOTAÇÕES: texto, fotos e áudio com transcrição ======
+  // Cada anotação fica no store "anotacoes":
+  //   { id, data: 'AAAA-MM-DD', criadoEm: ISO, texto, fotos: [Blob], audio: Blob|null, duracao: seg }
+  let anexosFotos = [];   // fotos escolhidas, aguardando "Salvar"
+  let anexoAudio = null;  // { blob, duracao }
+  let gravacao = null;    // gravação em andamento
+  const urlsObjeto = { painel: [], notas: [], alerta: [], anexos: [] };
+  const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const EH_ANDROID = /Android/i.test(navigator.userAgent);
+  const MAX_FOTOS = 6;
+  const MAX_GRAVACAO_SEG = 300;
+
+  function criarUrl(grupo, blob) { const u = URL.createObjectURL(blob); urlsObjeto[grupo].push(u); return u; }
+  function liberarUrls(grupo) { urlsObjeto[grupo].forEach(u => URL.revokeObjectURL(u)); urlsObjeto[grupo] = []; }
+  function dataBR(d) { return d.split('-').reverse().join('/'); }
+  function fmtTempo(seg) { return `${String(Math.floor(seg / 60)).padStart(2, '0')}:${String(seg % 60).padStart(2, '0')}`; }
+
+  // ---------- Banco ----------
+  function idbReq(r) { return new Promise((ok, erro) => { r.onsuccess = () => ok(r.result); r.onerror = () => erro(r.error); }); }
+  async function listarAnotacoesDoDia(data) {
+    const arr = await idbReq(db.transaction('anotacoes').objectStore('anotacoes').index('data').getAll(data));
+    return arr.sort((a, b) => a.criadoEm.localeCompare(b.criadoEm));
   }
-  async function saveLembretesDoc(doc) {
-    await saveDoc(doc);
+  async function listarAnotacoesPeriodo(inicio, fim) {
+    const arr = await idbReq(db.transaction('anotacoes').objectStore('anotacoes').index('data').getAll(IDBKeyRange.bound(inicio, fim)));
+    return arr.sort((a, b) => a.criadoEm.localeCompare(b.criadoEm));
+  }
+  function gravarAnotacao(obj) {
+    return new Promise((ok, erro) => {
+      const tx = db.transaction('anotacoes', 'readwrite');
+      const r = tx.objectStore('anotacoes').add(obj);
+      tx.oncomplete = () => ok(r.result); tx.onerror = () => erro(tx.error);
+    });
+  }
+  function apagarAnotacaoBanco(id) {
+    return new Promise((ok, erro) => {
+      const tx = db.transaction('anotacoes', 'readwrite');
+      tx.objectStore('anotacoes').delete(id);
+      tx.oncomplete = ok; tx.onerror = () => erro(tx.error);
+    });
   }
 
+  // ---------- Painel ----------
   function togglePainelLembretes() {
     const painel = document.getElementById('painel-lembretes');
     painel.classList.toggle('hidden');
+    if (painel.classList.contains('hidden')) { if (gravacao) pararGravacao(); return; }
     const d = document.getElementById('dataProd').value || hojeISO();
     document.getElementById('lemData').value = d;
     renderLembretesListaDia(d);
+    atualizarDicaComposer();
+    setTimeout(() => document.getElementById('lemTexto').focus(), 50);
   }
 
+  function atualizarDicaComposer() {
+    const dica = document.getElementById('lemDica');
+    if (!SpeechRec) dica.textContent = 'Este navegador grava o áudio, mas não transcreve. Use o Chrome para transcrever.';
+    else if (!navigator.onLine) dica.textContent = 'Sem internet: o áudio é gravado, mas a transcrição só funciona online.';
+    else dica.textContent = 'Toque em Gravar e fale: o texto aparece sozinho.';
+  }
+
+  // ---------- Fotos ----------
+  async function comprimirImagem(arquivo, maxLado = 1600, qualidade = 0.8) {
+    try {
+      const bmp = await createImageBitmap(arquivo);
+      const esc_ = Math.min(1, maxLado / Math.max(bmp.width, bmp.height));
+      const cv = document.createElement('canvas');
+      cv.width = Math.round(bmp.width * esc_); cv.height = Math.round(bmp.height * esc_);
+      cv.getContext('2d').drawImage(bmp, 0, 0, cv.width, cv.height);
+      bmp.close && bmp.close();
+      const blob = await new Promise(r => cv.toBlob(r, 'image/jpeg', qualidade));
+      return blob || arquivo;
+    } catch (e) {
+      return arquivo; // formato não suportado pelo canvas: guarda o original
+    }
+  }
+
+  async function adicionarFotos(lista) {
+    const arquivos = [...(lista || [])].filter(f => f.type.startsWith('image/'));
+    if (!arquivos.length) return;
+    const vagas = MAX_FOTOS - anexosFotos.length;
+    if (vagas <= 0) { mostrarToast(`Máximo de ${MAX_FOTOS} fotos por anotação.`, 'aviso'); return; }
+    if (arquivos.length > vagas) mostrarToast(`Só ${vagas} foto(s) adicionada(s): o máximo é ${MAX_FOTOS} por anotação.`, 'aviso');
+    for (const f of arquivos.slice(0, vagas)) anexosFotos.push(await comprimirImagem(f));
+    renderAnexos();
+  }
+
+  function removerAnexoFoto(i) { anexosFotos.splice(i, 1); renderAnexos(); }
+  function removerAnexoAudio() { anexoAudio = null; renderAnexos(); }
+
+  function renderAnexos() {
+    liberarUrls('anexos');
+    const el = document.getElementById('lemAnexos');
+    const partes = anexosFotos.map((b, i) => `
+      <div class="thumb"><img src="${criarUrl('anexos', b)}" alt="Foto ${i + 1}" onclick="abrirFoto(this.src)">
+        <button class="thumb-x" onclick="removerAnexoFoto(${i})" aria-label="Remover foto">&times;</button></div>`);
+    if (anexoAudio) partes.push(`
+      <div class="audio-chip"><span>🎤 ${fmtTempo(anexoAudio.duracao)}</span>
+        <audio controls preload="metadata" src="${criarUrl('anexos', anexoAudio.blob)}"></audio>
+        <button class="thumb-x static" onclick="removerAnexoAudio()" aria-label="Remover áudio">&times;</button></div>`);
+    el.innerHTML = partes.join('');
+    el.classList.toggle('hidden', partes.length === 0);
+  }
+
+  // ---------- Áudio: grava e transcreve ----------
+  function alternarGravacao() { if (gravacao) pararGravacao(); else iniciarGravacao(); }
+
+  async function iniciarGravacao() {
+    const ta = document.getElementById('lemTexto');
+    const textoBase = ta.value.trim();
+    const podeTranscrever = !!SpeechRec && navigator.onLine;
+    // No Android o microfone não pode ser usado pela transcrição e pela gravação ao mesmo tempo:
+    // lá, com internet, fica só a transcrição (texto); sem internet, grava o áudio.
+    const gravarAudio = !!window.MediaRecorder && !!navigator.mediaDevices && !(EH_ANDROID && podeTranscrever);
+    if (!podeTranscrever && !gravarAudio) { mostrarToast('Este navegador não permite gravar áudio.', 'erro'); return; }
+
+    const g = { inicio: Date.now(), chunks: [], finalTxt: '', rec: null, mr: null, stream: null, timer: null, parando: false, fimAudio: null };
+    gravacao = g;
+
+    if (gravarAudio) {
+      try {
+        g.stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
+        g.mr = new MediaRecorder(g.stream);
+        g.mr.ondataavailable = e => { if (e.data && e.data.size) g.chunks.push(e.data); };
+        g.fimAudio = new Promise(ok => {
+          g.mr.onstop = () => {
+            g.stream.getTracks().forEach(t => t.stop());
+            if (g.chunks.length) anexoAudio = { blob: new Blob(g.chunks, { type: g.mr.mimeType || 'audio/webm' }), duracao: Math.max(1, Math.round((Date.now() - g.inicio) / 1000)) };
+            renderAnexos(); ok();
+          };
+        });
+        g.mr.start(1000);
+      } catch (e) {
+        g.mr = null;
+        if (!podeTranscrever) { gravacao = null; avisoMicrofone(e); return; }
+      }
+    }
+
+    if (podeTranscrever) {
+      const rec = new SpeechRec();
+      rec.lang = 'pt-BR'; rec.continuous = true; rec.interimResults = true;
+      rec.onresult = ev => {
+        let provisorio = '';
+        for (let i = ev.resultIndex; i < ev.results.length; i++) {
+          const r = ev.results[i];
+          if (r.isFinal) g.finalTxt += r[0].transcript.trim() + ' ';
+          else provisorio += r[0].transcript;
+        }
+        const falado = (g.finalTxt + provisorio).trim();
+        ta.value = [textoBase, falado ? falado.charAt(0).toUpperCase() + falado.slice(1) : ''].filter(Boolean).join(textoBase ? '\n' : '');
+      };
+      rec.onerror = ev => {
+        if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') { avisoMicrofone(); if (gravacao === g) pararGravacao(); }
+        else if (ev.error === 'network') { mostrarToast('A transcrição precisa de internet.', 'aviso'); }
+        else if (ev.error === 'audio-capture') { mostrarToast('Não encontrei microfone neste aparelho.', 'erro'); if (gravacao === g) pararGravacao(); }
+      };
+      // O navegador encerra a transcrição sozinho depois de um silêncio: reinicia enquanto estiver gravando
+      rec.onend = () => { if (gravacao === g && !g.parando) { try { rec.start(); } catch (e) {} } };
+      try { rec.start(); g.rec = rec; } catch (e) { g.rec = null; }
+    }
+
+    if (!g.rec && !g.mr) { gravacao = null; mostrarToast('Não foi possível iniciar a gravação.', 'erro'); return; }
+
+    const btn = document.getElementById('btnGravar');
+    btn.classList.add('gravando');
+    document.getElementById('btnGravarTxt').textContent = 'Parar';
+    document.getElementById('gravacaoStatus').classList.remove('hidden');
+    document.getElementById('gravacaoMsg').textContent = g.rec
+      ? (g.mr ? 'Gravando e transcrevendo… fale normalmente' : 'Transcrevendo… fale normalmente')
+      : 'Gravando áudio (transcrição indisponível agora)';
+    const atualizarTempo = () => {
+      const s = Math.round((Date.now() - g.inicio) / 1000);
+      document.getElementById('gravacaoTempo').textContent = fmtTempo(s);
+      if (s >= MAX_GRAVACAO_SEG) { mostrarToast('Gravação encerrada: limite de 5 minutos.', 'aviso'); pararGravacao(); }
+    };
+    atualizarTempo();
+    g.timer = setInterval(atualizarTempo, 500);
+  }
+
+  function avisoMicrofone() {
+    mostrarToast('Permita o uso do microfone (cadeado ao lado do endereço do site).', 'erro');
+  }
+
+  // Retorna quando o áudio já estiver pronto para salvar
+  async function pararGravacao() {
+    const g = gravacao;
+    if (!g) return;
+    g.parando = true;
+    gravacao = null;
+    clearInterval(g.timer);
+    if (g.rec) { try { g.rec.stop(); } catch (e) {} }
+    if (g.mr && g.mr.state !== 'inactive') { try { g.mr.stop(); } catch (e) {} }
+    document.getElementById('btnGravar').classList.remove('gravando');
+    document.getElementById('btnGravarTxt').textContent = 'Gravar áudio';
+    document.getElementById('gravacaoStatus').classList.add('hidden');
+    if (g.fimAudio) await g.fimAudio;
+    // Pequena espera para o último trecho transcrito chegar
+    if (g.rec) await new Promise(r => setTimeout(r, 400));
+  }
+
+  // ---------- Salvar / excluir ----------
   async function adicionarLembrete() {
+    if (gravacao) await pararGravacao();
     const data = document.getElementById('lemData').value || document.getElementById('dataProd').value;
     const texto = (document.getElementById('lemTexto').value || '').trim();
-    if (!data) { mostrarToast('Selecione a data do lembrete.', 'aviso'); return; }
-    if (!texto) { mostrarToast('Digite o texto do lembrete.', 'aviso'); return; }
+    if (!data) { mostrarToast('Selecione a data da anotação.', 'aviso'); return; }
+    if (!texto && !anexosFotos.length && !anexoAudio) { mostrarToast('Escreva, grave um áudio ou anexe uma foto.', 'aviso'); return; }
 
-    const doc = await getLembretesDoc();
-    if (!doc.mapa[data]) doc.mapa[data] = [];
-    doc.mapa[data].push(texto);
-    await saveLembretesDoc(doc);
+    const btn = document.getElementById('btnSalvarLembrete');
+    btn.disabled = true;
+    try {
+      await gravarAnotacao({
+        data, criadoEm: new Date().toISOString(), texto,
+        fotos: anexosFotos.slice(), audio: anexoAudio ? anexoAudio.blob : null, duracao: anexoAudio ? anexoAudio.duracao : 0
+      });
+    } catch (e) {
+      console.error(e);
+      mostrarToast(e && e.name === 'QuotaExceededError' ? 'Sem espaço no aparelho para salvar fotos/áudio.' : 'Falha ao salvar a anotação.', 'erro');
+      btn.disabled = false;
+      return;
+    }
+    btn.disabled = false;
+    registrarAuditoria('anotacao', `Anotação em ${data}: ${texto.slice(0, 60)}${anexosFotos.length ? ` (+${anexosFotos.length} foto)` : ''}${anexoAudio ? ' (+áudio)' : ''}`);
 
     document.getElementById('lemTexto').value = '';
-    renderLembretesListaDia(data);
-
-    if (data === (document.getElementById('dataProd').value || '')) {
-      exibirLembretesDoDia();
-      atualizarBadgeLembretes();
-    }
-    mostrarToast("Lembrete adicionado!");
+    anexosFotos = []; anexoAudio = null; renderAnexos();
+    await atualizarTelasAnotacoes(data);
+    mostrarToast('Anotação salva!');
   }
 
-  async function removerLembrete(data, idx) {
-    const doc = await getLembretesDoc();
-    if (!doc.mapa[data]) return;
-    doc.mapa[data].splice(idx, 1);
-    if (doc.mapa[data].length === 0) delete doc.mapa[data];
-    await saveLembretesDoc(doc);
-    renderLembretesListaDia(data);
+  function removerLembrete(id) {
+    abrirModalConfirmacao('Excluir anotação', 'Excluir esta anotação, com as fotos e o áudio dela?', async () => {
+      await apagarAnotacaoBanco(id);
+      await atualizarTelasAnotacoes(document.getElementById('lemData').value);
+      mostrarToast('Anotação excluída.');
+    });
+  }
 
-    if (data === (document.getElementById('dataProd').value || '')) {
-      exibirLembretesDoDia();
-      atualizarBadgeLembretes();
-    }
-    mostrarToast("Lembrete removido.");
+  async function atualizarTelasAnotacoes(data) {
+    if (!document.getElementById('painel-lembretes').classList.contains('hidden')) await renderLembretesListaDia(document.getElementById('lemData').value || data);
+    if (data === (document.getElementById('dataProd').value || '')) { exibirLembretesDoDia(); atualizarBadgeLembretes(); }
+    if (!document.getElementById('secao-notas').classList.contains('hidden')) renderAnotacoes();
+  }
+
+  // ---------- Exibição ----------
+  function htmlAnotacao(n, grupo, comExcluir = true) {
+    const hora = n.semHora ? '' : new Date(n.criadoEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    const fotos = (n.fotos || []).map((b, i) => `<div class="thumb"><img src="${criarUrl(grupo, b)}" alt="Foto ${i + 1}" loading="lazy" onclick="abrirFoto(this.src)"></div>`).join('');
+    return `
+      <div class="nota">
+        <div class="nota-hora">${hora || '—'}</div>
+        <div class="nota-corpo">
+          ${n.texto ? `<div class="nota-texto">${esc(n.texto)}</div>` : ''}
+          ${fotos ? `<div class="nota-fotos">${fotos}</div>` : ''}
+          ${n.audio ? `<audio controls preload="metadata" src="${criarUrl(grupo, n.audio)}"></audio>` : ''}
+        </div>
+        ${comExcluir ? `<button class="icon-btn nota-del" onclick="removerLembrete(${n.id})" title="Excluir anotação" aria-label="Excluir anotação">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.87 12.14A2 2 0 0116.14 21H7.86a2 2 0 01-2-1.86L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg></button>` : ''}
+      </div>`;
   }
 
   async function renderLembretesListaDia(data) {
+    if (!db || !data) return;
     const listaEl = document.getElementById('lemListaDia');
-    const doc = await getLembretesDoc();
-    const arr = (doc.mapa[data] || []);
-    if (arr.length === 0) {
-      listaEl.innerHTML = `<div class="empty-msg" style="padding:10px;">Sem lembretes para esta data.</div>`;
-      return;
-    }
-    listaEl.innerHTML = arr.map((t, i) => `
-      <div class="lem-item">
-        <div><b>${data.split('-').reverse().join('/')}:</b> ${esc(t)}</div>
-        <button class="btn btn-danger-ghost btn-sm" onclick="removerLembrete('${esc(data)}', ${i})">Excluir</button>
-      </div>
-    `).join('');
+    const arr = await listarAnotacoesDoDia(data);
+    liberarUrls('painel');
+    listaEl.innerHTML = arr.length
+      ? `<div class="day-notes-title">Anotações de ${dataBR(data)} (${arr.length})</div>` + arr.map(n => htmlAnotacao(n, 'painel')).join('')
+      : `<div class="empty-msg" style="padding:10px;">Sem anotações para ${dataBR(data)}.</div>`;
   }
 
+  // Aviso no topo do lançamento com as anotações do dia
   async function exibirLembretesDoDia() {
+    if (!db) return;
     const d = document.getElementById('dataProd').value || hojeISO();
     const alertEl = document.getElementById('lembretes-alert');
-    const doc = await getLembretesDoc();
-    const arr = (doc.mapa[d] || []);
-    if (arr.length === 0) {
-      alertEl.classList.add('hidden');
-      alertEl.innerHTML = '';
-      return;
-    }
+    const arr = await listarAnotacoesDoDia(d);
+    liberarUrls('alerta');
+    if (arr.length === 0) { alertEl.classList.add('hidden'); alertEl.innerHTML = ''; return; }
     alertEl.classList.remove('hidden');
-    const dtBr = d.split('-').reverse().join('/');
     alertEl.innerHTML = `
       <span style="font-size:18px;">🗒️</span>
-      <div><b>Lembretes de ${dtBr}</b>
-        <ul>${arr.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+      <div style="flex:1; min-width:0;"><b>Anotações de ${dataBR(d)}</b>
+        <ul>${arr.map(n => {
+          const extras = [(n.fotos || []).length ? `📷 ${n.fotos.length}` : '', n.audio ? '🎤 áudio' : ''].filter(Boolean).join(' · ');
+          return `<li>${n.texto ? esc(n.texto.length > 140 ? n.texto.slice(0, 140) + '…' : n.texto) : '<i>(sem texto)</i>'}${extras ? ` <span class="nota-extra">${extras}</span>` : ''}</li>`;
+        }).join('')}</ul>
       </div>
-    `;
+      <button class="btn btn-ghost btn-sm" onclick="togglePainelLembretes()">Abrir</button>`;
   }
 
   async function atualizarBadgeLembretes() {
+    if (!db) return;
     const d = document.getElementById('dataProd').value || hojeISO();
+    const q = (await listarAnotacoesDoDia(d)).length;
     const badge = document.getElementById('badgeLembretes');
-    const doc = await getLembretesDoc();
-    const q = (doc.mapa[d] || []).length;
     badge.textContent = q;
     badge.classList.toggle('hidden', q === 0);
   }
+
+  // ---------- Foto ampliada ----------
+  function abrirFoto(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('visible');
+  }
+  function fecharFoto() { document.getElementById('lightbox').classList.remove('visible'); }
+
+  // ====== ABA ANOTAÇÕES: resumo de cada dia (produção + anotações) ======
+  function resumirDia(registros) {
+    const r = { total: 0, fin: 0, ativas: 0, faltas: [], meio: [], horas: Array(10).fill(0), porCostureira: {}, servicos: {} };
+    (registros || []).forEach(reg => {
+      if (!reg.n) return;
+      let tLinha = 0;
+      (reg.h || []).forEach((hList, idx) => {
+        const itens = Array.isArray(hList) ? hList : (hList && hList.s ? [hList] : []);
+        itens.forEach(p => {
+          const q = parseFloat(p.q) || 0;
+          tLinha += q; r.total += q;
+          if (idx < 10) r.horas[idx] += q;
+          if (p.s === 'F') r.fin += q;
+          else if (p.s) r.servicos[p.s] = (r.servicos[p.s] || 0) + q;
+        });
+      });
+      if (reg.st === 'Falta') r.faltas.push(reg.n);
+      if (reg.st === 'Meio Período') r.meio.push(reg.n);
+      if (reg.st === 'Trabalhando' || reg.st === 'Meio Período' || tLinha > 0) r.ativas++;
+      if (tLinha > 0) r.porCostureira[reg.n] = (r.porCostureira[reg.n] || 0) + tLinha;
+    });
+    const picoIdx = r.horas.reduce((b, v, i) => v > r.horas[b] ? i : b, 0);
+    r.pico = r.horas[picoIdx] > 0 ? { hora: HORAS_LABEL[picoIdx], qtd: r.horas[picoIdx] } : null;
+    const top = Object.entries(r.porCostureira).sort((a, b) => b[1] - a[1])[0];
+    r.destaque = top ? { nome: top[0], qtd: top[1] } : null;
+    r.temProducao = r.total > 0 || r.faltas.length > 0 || r.ativas > 0;
+    return r;
+  }
+
+  let cacheNotasDias = {}; // data → { resumo, notas } (usado no compartilhar)
+
+  async function renderAnotacoes() {
+    if (!db) return;
+    const mesEl = document.getElementById('notasMes');
+    if (!mesEl.value) mesEl.value = (document.getElementById('dataProd').value || hojeISO()).slice(0, 7);
+    const mes = mesEl.value;
+    const busca = (document.getElementById('notasBusca').value || '').trim().toLowerCase();
+    const soComNotas = document.getElementById('notasSoComNotas').checked;
+    const ini = `${mes}-01`, fim = `${mes}-31`;
+
+    const [producao, notas] = await Promise.all([
+      idbReq(db.transaction('producao').objectStore('producao').getAll(IDBKeyRange.bound(ini, fim))),
+      listarAnotacoesPeriodo(ini, fim)
+    ]);
+    const notasPorDia = {};
+    notas.forEach(n => (notasPorDia[n.data] = notasPorDia[n.data] || []).push(n));
+    const prodPorDia = {};
+    producao.forEach(p => prodPorDia[p.data] = p.registros);
+
+    let dias = [...new Set([...Object.keys(notasPorDia), ...Object.keys(prodPorDia)])].sort().reverse();
+    cacheNotasDias = {};
+    dias = dias.filter(d => {
+      const resumo = resumirDia(prodPorDia[d]);
+      const ns = notasPorDia[d] || [];
+      if (!resumo.temProducao && ns.length === 0) return false;
+      if (soComNotas && ns.length === 0) return false;
+      if (busca) {
+        const alvo = [ns.map(n => n.texto || '').join(' '), resumo.faltas.join(' '), Object.keys(resumo.porCostureira).join(' ')].join(' ').toLowerCase();
+        if (!alvo.includes(busca)) return false;
+      }
+      cacheNotasDias[d] = { resumo, notas: ns };
+      return true;
+    });
+
+    const totalNotas = dias.reduce((s, d) => s + cacheNotasDias[d].notas.length, 0);
+    document.getElementById('notasContagem').textContent = `${dias.length} dia(s) · ${totalNotas} anotação(ões)`;
+
+    liberarUrls('notas');
+    const lista = document.getElementById('notas-lista');
+    if (!dias.length) {
+      lista.innerHTML = `<div class="card estado-vazio"><div class="estado-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.59a1 1 0 01.7.29l5.42 5.42a1 1 0 01.29.7V19a2 2 0 01-2 2z"/></svg></div>
+        <h3>Nada encontrado</h3><p>${busca ? 'Nenhum dia corresponde à busca.' : 'Sem produção ou anotações neste mês.'}</p></div>`;
+      return;
+    }
+    lista.innerHTML = dias.map(d => htmlDia(d, cacheNotasDias[d])).join('');
+  }
+
+  function htmlDia(d, { resumo: r, notas }) {
+    const semana = new Date(d + 'T12:00:00').toLocaleDateString('pt-BR', { weekday: 'long' });
+    const pct = META_DIARIA > 0 ? Math.round(r.fin / META_DIARIA * 100) : 0;
+    const servicos = Object.entries(r.servicos).sort((a, b) => b[1] - a[1]).map(([s, q]) => `${esc(s)} ${nf0.format(q)}`).join(' · ');
+    const stats = r.temProducao ? `
+      <div class="day-stats">
+        <div class="stat"><div class="stat-l">Total produzido</div><div class="stat-v">${nf0.format(r.total)} <small>peças</small></div></div>
+        <div class="stat"><div class="stat-l">Finalizações (F)</div><div class="stat-v">${nf0.format(r.fin)} <small>/ ${nf0.format(META_DIARIA)} · ${pct}%</small></div></div>
+        <div class="stat"><div class="stat-l">Costureiras ativas</div><div class="stat-v">${r.ativas}${r.faltas.length ? ` <small>· ${r.faltas.length} falta(s)</small>` : ''}</div></div>
+        <div class="stat"><div class="stat-l">Hora de pico</div><div class="stat-v">${r.pico ? `${r.pico.hora} <small>${nf0.format(r.pico.qtd)} peças</small>` : '—'}</div></div>
+      </div>
+      ${r.destaque ? `<div class="day-line">🏆 Destaque: <b>${esc(r.destaque.nome)}</b> (${nf0.format(r.destaque.qtd)} peças)</div>` : ''}
+      ${r.faltas.length ? `<div class="day-line">❌ Faltas: <b>${r.faltas.map(esc).join(', ')}</b></div>` : ''}
+      ${r.meio.length ? `<div class="day-line">🕐 Meio período: <b>${r.meio.map(esc).join(', ')}</b></div>` : ''}
+      ${servicos ? `<div class="day-line">⚙️ Serviços: ${servicos}</div>` : ''}` : `<div class="day-line" style="color:var(--ink-3)">Sem produção lançada neste dia.</div>`;
+
+    return `
+      <article class="card day-card">
+        <div class="day-head">
+          <div><div class="day-weekday">${semana}</div><h3>${dataBR(d)}</h3></div>
+          <div class="toolbar">
+            <button class="btn btn-ghost btn-sm" onclick="compartilharDia('${d}')">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.7 10.7l6.6-3.4m-6.6 6l6.6 3.4M21 5a3 3 0 11-6 0 3 3 0 016 0zM9 12a3 3 0 11-6 0 3 3 0 016 0zm12 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Compartilhar</button>
+            <button class="btn btn-ghost btn-sm" onclick="abrirDiaNoLancamento('${d}')">Abrir dia</button>
+          </div>
+        </div>
+        ${stats}
+        <div class="day-notes-title">Anotações ${notas.length ? `(${notas.length})` : ''}</div>
+        ${notas.length ? `<div class="stack" style="gap:8px;">${notas.map(n => htmlAnotacao(n, 'notas')).join('')}</div>`
+                       : `<div class="empty-msg" style="padding:8px 0; text-align:left;">Nenhuma anotação neste dia.</div>`}
+      </article>`;
+  }
+
+  function textoResumoDia(d) {
+    const { resumo: r, notas } = cacheNotasDias[d];
+    const semana = new Date(d + 'T12:00:00').toLocaleDateString('pt-BR', { weekday: 'long' });
+    const linhas = [`*PATCON — Resumo de ${dataBR(d)} (${semana})*`];
+    if (r.temProducao) {
+      const pct = META_DIARIA > 0 ? Math.round(r.fin / META_DIARIA * 100) : 0;
+      linhas.push(`Produção: ${nf0.format(r.total)} peças · Finalizações: ${nf0.format(r.fin)}/${nf0.format(META_DIARIA)} (${pct}%)`);
+      linhas.push(`Costureiras ativas: ${r.ativas}${r.faltas.length ? ` · Faltas: ${r.faltas.join(', ')}` : ''}`);
+      if (r.meio.length) linhas.push(`Meio período: ${r.meio.join(', ')}`);
+      if (r.pico) linhas.push(`Pico: ${r.pico.hora} (${nf0.format(r.pico.qtd)} peças)${r.destaque ? ` · Destaque: ${r.destaque.nome} (${nf0.format(r.destaque.qtd)})` : ''}`);
+      const serv = Object.entries(r.servicos).sort((a, b) => b[1] - a[1]).map(([s, q]) => `${s} ${nf0.format(q)}`).join(' · ');
+      if (serv) linhas.push(`Serviços: ${serv}`);
+    }
+    if (notas.length) {
+      linhas.push('', '*Anotações:*');
+      notas.forEach(n => {
+        const hora = n.semHora ? '' : new Date(n.criadoEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }) + ' – ';
+        const extras = [(n.fotos || []).length ? `📷 ${n.fotos.length} foto(s)` : '', n.audio ? '🎤 áudio' : ''].filter(Boolean).join(', ');
+        linhas.push(`• ${hora}${n.texto || ''}${extras ? ` [${extras}]` : ''}`);
+      });
+    }
+    return linhas.join('\n');
+  }
+
+  async function compartilharDia(d) {
+    if (!cacheNotasDias[d]) return;
+    const texto = textoResumoDia(d);
+    const fotos = cacheNotasDias[d].notas.flatMap(n => n.fotos || []).map((b, i) => new File([b], `patcon-${d}-foto${i + 1}.jpg`, { type: b.type || 'image/jpeg' }));
+    try {
+      if (navigator.share) {
+        const dados = { title: `PATCON — ${dataBR(d)}`, text: texto };
+        if (fotos.length && navigator.canShare && navigator.canShare({ files: fotos })) dados.files = fotos;
+        await navigator.share(dados);
+        return;
+      }
+    } catch (e) {
+      if (e && e.name === 'AbortError') return; // usuário cancelou
+    }
+    try {
+      await navigator.clipboard.writeText(texto);
+      mostrarToast('Resumo copiado! Cole no WhatsApp ou e-mail.');
+    } catch (e) {
+      mostrarToast('Não foi possível compartilhar neste navegador.', 'erro');
+    }
+  }
+
+  function abrirDiaNoLancamento(d) {
+    const inp = document.getElementById('dataProd');
+    inp.value = d;
+    inp.onchange();
+    irPara('lancamento');
+  }
+
+  // Busca com pequeno atraso para não redesenhar a cada tecla
+  let timerBuscaNotas;
+  function buscarAnotacoes() { clearTimeout(timerBuscaNotas); timerBuscaNotas = setTimeout(renderAnotacoes, 250); }
 
   async function gerarDash() {
     const tx = db.transaction("producao", "readonly");
@@ -2385,7 +2922,8 @@
     clearTimeout(timerAutoSalvar);
     salvarNoBancoSilencioso();
 
-    const telas = ['secao-lancamento', 'secao-charts', 'secao-config'];
+    if (gravacao && destino !== 'lancamento') pararGravacao();
+    const telas = ['secao-lancamento', 'secao-charts', 'secao-config', 'secao-notas'];
     telas.forEach(t => document.getElementById(t).classList.add('hidden'));
     document.querySelectorAll('.app-tab').forEach(tab => {
       const selecionada = tab.id === `tab-${destino}`;
@@ -2404,6 +2942,7 @@
         document.getElementById('filtroMesDash').value = (document.getElementById('dataProd').value || '').substring(0, 7);
         gerarDash();
       }
+      if (destino === 'notas') renderAnotacoes();
     }
   }
 
@@ -2414,7 +2953,8 @@
     const meta = await getDoc('config_meta') || { valor: META_DIARIA_PADRAO };
     
     renderLista('listaCostureiras', cost.lista);
-    renderLista('listaServicos', serv.lista, true);
+    aplicarReferencias(serv ? serv.lista : []);
+    renderListaServicos(serv ? serv.lista : []);
     renderListaBaseLancamento(base.lista);
     
     document.getElementById('configMetaDiaria').value = meta.valor || META_DIARIA_PADRAO;
@@ -2431,6 +2971,45 @@
         <span>${isServ ? `<b>${esc(item.s)}</b> · ${esc(item.d)}` : esc(item)}</span>
         <button onclick="removerCad('${isServ?'servicos':'costureiras'}', ${idx})">Excluir</button>
       </div>`).join('');
+  }
+
+  function renderListaServicos(lista) {
+    const el = document.getElementById('listaServicos');
+    if (!lista || lista.length === 0) {
+      el.innerHTML = `<div class="empty-msg" style="padding:14px;">Nenhum serviço cadastrado.</div>`;
+      return;
+    }
+    el.innerHTML = `<div class="list-head"><span>Serviço</span><span style="margin-right:64px;">Peças/hora</span></div>` +
+      lista.map((item, idx) => `
+      <div class="list-item">
+        <span class="svc-name"><b>${esc(item.s)}</b> · ${esc(item.d)}</span>
+        <label class="ref-field">
+          <input type="number" class="ref-input" min="1" step="1" inputmode="numeric" value="${item.r > 0 ? item.r : ''}" placeholder="—"
+                 aria-label="Peças por hora de ${esc(item.d)}" onchange="salvarReferenciaServico(${idx}, this)" onkeydown="if(event.key==='Enter') this.blur()">/h
+        </label>
+        <button onclick="removerCad('servicos', ${idx})">Excluir</button>
+      </div>`).join('');
+  }
+
+  // Salva a referência de peças/hora editada direto na lista
+  async function salvarReferenciaServico(idx, input) {
+    const doc = await getDoc('servicos');
+    if (!doc || !doc.lista[idx]) return;
+    const v = parseInt(input.value, 10);
+    if (input.value !== '' && !(v > 0)) {
+      mostrarToast('Informe um número maior que zero (ou deixe vazio para sem referência).', 'aviso');
+      input.value = doc.lista[idx].r > 0 ? doc.lista[idx].r : '';
+      return;
+    }
+    const antes = doc.lista[idx].r;
+    doc.lista[idx].r = v > 0 ? v : null;
+    await saveDoc(doc);
+    aplicarReferencias(doc.lista);
+    renderizarTabelaCompleta();
+    registrarAuditoria('configuracao', `Referência ${doc.lista[idx].s}: ${antes || '—'} → ${doc.lista[idx].r || '—'} peças/h`);
+    input.classList.add('salvo');
+    setTimeout(() => input.classList.remove('salvo'), 1200);
+    mostrarToast(`${doc.lista[idx].s}: ${doc.lista[idx].r ? doc.lista[idx].r + ' peças/hora' : 'sem referência'}.`);
   }
 
   async function addCad(tipo, id) {
@@ -2459,10 +3038,14 @@
       return;
     }
 
-    doc.lista.push({ s, d }); 
+    const r = parseInt(document.getElementById('cadRef').value, 10);
+    doc.lista.push({ s, d, r: r > 0 ? r : null });
     await saveDoc(doc);
-    document.getElementById('cadSigla').value = ''; 
-    document.getElementById('cadDesc').value = ''; 
+    aplicarReferencias(doc.lista);
+    renderizarTabelaCompleta();
+    document.getElementById('cadSigla').value = '';
+    document.getElementById('cadDesc').value = '';
+    document.getElementById('cadRef').value = '';
     carregarConfigs();
     mostrarToast("Serviço adicionado!");
   }
@@ -2658,7 +3241,9 @@
   // Esc fecha painel/modal
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
-    if (document.getElementById('backdrop-confirm').classList.contains('visible')) {
+    if (document.getElementById('lightbox').classList.contains('visible')) {
+      fecharFoto();
+    } else if (document.getElementById('backdrop-confirm').classList.contains('visible')) {
       document.getElementById('backdrop-confirm').classList.remove('visible');
     } else if (document.getElementById('drawer-lancamento').classList.contains('visible')) {
       fecharPainelLateral();
